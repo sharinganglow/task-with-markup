@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background: linear-gradient(4deg, #5462c3, #ba872c);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.error-message-block {
+    display: inline-block;
+    background-image: url("img/error-pic.jpg");
+    width: 35%;
+    text-align: start;
+    height: 40vh;
+    background-size: cover;
+    margin: auto;
+    border-radius: 16%;
+    box-shadow: 5px 7px 5px 7px #373540;
+    background-repeat: no-repeat;
+}
+
+.message {
+    display: flex;
+    margin-top: 40%;
+    margin-left: 10%;
+    font-size: 50px;
+}
+
+.redirect {
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    font-size: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: teal;
+    margin-left: 20%;
+}
+
+.link:hover {
+    color: #5462c3;
+}
