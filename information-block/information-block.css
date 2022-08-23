@@ -1,0 +1,51 @@
+
+.fill-field {
+    display: flex;
+    justify-content: center;
+
+    width: 80%;
+    height: 550px;
+    margin: 1.5% auto 0 auto;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 80px;
+}
+
+.information-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.information-block__title {
+    margin-top: 15px;
+}
+
+.information-block__item {
+    display: block;
+
+    width: 350px;
+}
+
+.information-block__img {
+    display: block;
+
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 76% 24% 22% 78% / 76% 24% 76% 24%;
+    overflow: hidden;
+    opacity: 40%;
+    transition: all 1s;
+}
+
+.information-block__img:hover {
+    opacity: 80%;
+    transition: all 1s;
+}
