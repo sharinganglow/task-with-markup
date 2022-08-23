@@ -1,0 +1,59 @@
+
+.rating-table {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+}
+
+.rating-table__title {
+    display: flex;
+    justify-content: center;
+
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+
+    font-size: 30px;
+    font-style: oblique;
+
+    border-bottom: 2px solid black;
+}
+
+.rating-table__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 85%;
+    margin: auto;
+
+    text-align: center;
+}
+
+.rating-table__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 33%;
+    margin-top: 15px;
+    height: content-box;
+}
+
+.rating-table__item_image {
+    width: 50%;
+    margin-bottom: 40px;
+
+    box-shadow: 3px 2px 4px 3px #ba872c;
+}
+
+.rating-table__item_header {
+    margin-right: 40px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-size: 20px;
+}
