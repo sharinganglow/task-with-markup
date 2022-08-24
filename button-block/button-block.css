@@ -1,9 +1,8 @@
 
-.button-block_default {
+.button {
     position: absolute;
     top: 20px;
     right: 80px;
-
     display: block;
 
     width: 100px;
@@ -19,91 +18,53 @@
     transition: all 0.9s;
 }
 
-.button-block_default:hover {
+.button:hover {
     background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
     border-radius: 15px 0 15px 0;
     transition: all 0.9s;
 }
 
 
-.button-block_default_dark {
-    position: absolute;
-    top: 20px;
-    right: 80px;
-
-    display: block;
-
-    width: 100px;
-    height: 40px;
-
+.button_dark {
     color: white;
-    text-align: center;
-    line-height: 35px;
 
-    box-shadow: 4px 3px 2px rgb(0 0 1);
-    background: -webkit-linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326);
-    background: linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326);
-    border-radius: 0 15px 0 15px;
-    transition: all 0.9s;
+    background: linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326),
+    linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326);
 }
 
-.button-block_default_dark:hover {
-    background: -webkit-linear-gradient(90deg, #87124d,#340e40);
-    background: linear-gradient(90deg, #87124d,#340e40);
+.button_dark:hover {
+    background: linear-gradient(90deg, #87124d,#340e40), linear-gradient(90deg, #87124d,#340e40);
     border-radius: 15px 0 15px 0;
     transition: all 0.9s;
 }
 
-.button-block_reverse {
-    position: absolute;
-    top: 20px;
+.button_reverse {
     left: 80px;
+    right: initial;
 
-    display: block;
-
-    width: 100px;
-    height: 40px;
-
-    color: white;
-    text-align: center;
-    line-height: 35px;
-
-    box-shadow: 4px 3px 2px rgb(0 0 1);
     background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
     border-radius: 15px 0 15px 0;
-    transition: all 0.9s;
 }
 
-.button-block_reverse:hover {
+.button_reverse:hover {
     background: linear-gradient(90deg, #cfecd0, #ffc5ca);
     border-radius: 0 15px 0 15px;
     transition: all 0.9s;
 }
 
-.button-block_reverse_dark {
-    position: absolute;
-    top: 20px;
+.button_reversed-dark {
     left: 80px;
-
-    display: block;
-
-    width: 100px;
-    height: 40px;
+    right: initial;
 
     color: white;
-    text-align: center;
-    line-height: 35px;
 
-    box-shadow: 4px 3px 2px rgb(0 0 1);
-    background: -webkit-linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326);
-    background: linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326);
+    background: linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326),
+    linear-gradient(90deg, #342326,#580413,#540021,#580413,#342326);
     border-radius: 15px 0 15px 0;
-    transition: all 0.9s;
 }
 
-.button-block_reverse_dark:hover {
-    background: -webkit-linear-gradient(90deg, #87124d,#340e40);
-    background: linear-gradient(90deg, #87124d,#340e40);
+.button_reversed-dark:hover {
+    background: linear-gradient(90deg, #87124d,#340e40),
+    linear-gradient(90deg, #87124d,#340e40);
     border-radius: 0 15px 0 15px;
-    transition: all 0.9s;
 }

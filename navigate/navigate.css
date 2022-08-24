@@ -1,5 +1,5 @@
 
-.navigate {
+.navigation {
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -10,12 +10,12 @@
     box-shadow: 0 2px 0 #373540;
 }
 
-.navigate__list {
+.navigation__list {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.navigate__item {
+.navigation__item {
     padding: 10px;
 
     list-style-type: none;
@@ -23,7 +23,7 @@
     font-size: 115%;
 }
 
-.navigate__link:hover {
+.navigation__link:hover {
     color: darkgray;
 
     transition: all 0.2s;

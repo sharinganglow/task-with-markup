@@ -25,14 +25,13 @@
 }
 
 .link_black {
-    text-decoration: none;
-    font-weight: normal;
     color: black;
-
-    transition: all 0.2s;
 }
 
 .background-card {
+    width: 95%;
+    margin: auto;
+
     background-image:
             radial-gradient(circle at 0% 0%,
             #ffbf00 0, #ffb000 12.5%, #ff9f09 25%,
@@ -40,11 +39,9 @@
             #da5929 75%, #cf4b2d 87.5%, #c43e31 100%);
     box-shadow: 1px 4px 2px 3px dimgrey;
     border-radius: 50px;
-    width: 95%;
-    margin: auto;
 }
 
-.quote-block {
+.quote {
     height: 100px;
     padding: 20px;
 }

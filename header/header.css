@@ -1,5 +1,5 @@
 
-.header-block {
+.header {
     display: block;
 
     width: 100%;
@@ -12,33 +12,17 @@
     box-shadow: 0 2px 3px 3px rgba(29 43 75);
 }
 
-.header-block_blue {
-    display: block;
-
-    width: 100%;
-    padding-bottom: 1%;
-
-    text-align: center;
+.header_blue {
     color: black;
 
-    background: black;
-    box-shadow: 0 2px 3px 3px rgba(29 43 75);
     background: -webkit-linear-gradient(90deg, #c8d9eb,#338fc2,#c5e1ec);
     background: linear-gradient(90deg, #c8d9eb,#338fc2,#c5e1ec);
 }
 
 
-.header-block_orange {
-    display: block;
-
-    width: 100%;
-    padding-bottom: 1%;
-
-    text-align: center;
+.header_orange {
     color: black;
 
-    background: black;
-    box-shadow: 0 2px 3px 3px rgba(29 43 75);
     background: -webkit-linear-gradient(90deg, #67aa90,#83913c,#b95e11);
     background: linear-gradient(90deg, #67aa90,#83913c,#b95e11);
 }
