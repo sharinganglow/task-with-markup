@@ -19,3 +19,25 @@
     border-bottom: 1px solid white;
     transition: all 0.3s;
 }
+
+.footer_blue {
+    display: flex;
+    justify-content: space-evenly;
+
+    height: 30px;
+    padding: 0.5% 0;
+
+    background: -webkit-linear-gradient(90deg, #32c5c5,#799ce4,#cc6683);
+    background: linear-gradient(90deg, #32c5c5,#799ce4,#cc6683);
+}
+
+.footer_orange {
+    display: flex;
+    justify-content: space-evenly;
+
+    height: 30px;
+    padding: 0.5% 0;
+
+    background: -webkit-linear-gradient(90deg, #e6264b,#f88c4c,#fcd780);
+    background: linear-gradient(90deg, #e6264b,#f88c4c,#fcd780);
+}

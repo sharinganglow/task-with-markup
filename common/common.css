@@ -24,6 +24,14 @@
     transition: all 0.2s;
 }
 
+.link_black {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+
+    transition: all 0.2s;
+}
+
 .background-card {
     background-image:
             radial-gradient(circle at 0% 0%,
