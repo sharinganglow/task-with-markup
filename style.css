@@ -27,6 +27,12 @@ body {
     height: 6rem;
     margin: auto;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-container {
+        width: 89.5%;
+    }
+}
                      /* --------------------------------------------- */
 .header {
     display: flex;
@@ -38,17 +44,23 @@ body {
 }
 
 .header__logo {
-    height: 61.7%;
-
     align-self: center;
+
+    height: 65%;
 }
 
 .header__text {
     margin: 0 3.2rem 0 3.2rem;
 
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header__text {
+        margin: 0 3.2rem 0 0;
+    }
 }
 
 .header__text_right {
@@ -64,8 +76,9 @@ body {
     flex-flow: row nowrap;
     align-items: center;
     justify-self: right;
-}
 
+    box-sizing: border-box;
+}
                     /* --------------------------------------------- */
 
 .welcome-card {
@@ -90,10 +103,24 @@ body {
     background-repeat: round;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .welcome-card__main {
+
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
 .welcome-card__text-area {
     width: 34%;
 
     text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .welcome-card__text-area {
+        width: 40%;
+    }
 }
 
 .goals {
@@ -102,7 +129,7 @@ body {
     justify-content: space-evenly;
 
     width: 100%;
-    height: 16.5vh;
+    height: 21vh;
 }
 
 .goals__item {
@@ -125,11 +152,9 @@ body {
     background: #B9506A;
 }
 
-
 .goals__item:nth-child(2) {
     background: #283D87;
 }
-
 
 .goals__item:nth-child(3) {
     background: #3F6FD7;
@@ -142,11 +167,26 @@ body {
     color: white;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .goals__item-title {
+        font-size: 2.4rem;
+        line-height: 3.8rem;
+
+    }
+}
+
 .goals__item-aside {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .goals__item-aside {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
 }
 
                 /* --------------------------------------- */
@@ -163,6 +203,15 @@ body {
     line-height: 64px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .general__title {
+        margin-bottom: 0.7rem;
+
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
 .news {
     display: flex;
     justify-content: space-between;
@@ -170,6 +219,14 @@ body {
     width: 82%;
     height: 60vh;
     margin: 0 auto 5.6rem auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news {
+        width: 89.5%;
+        height: initial;
+        margin-bottom: 3.2rem;
+    }
 }
 
 .news__item {
@@ -180,7 +237,14 @@ body {
     width: 33.33%;
     padding: 1.6rem;
     margin: 0.95rem;
+
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news__item {
+        width: 26.5%;
+    }
 }
 
 .news__item-image {
@@ -194,12 +258,37 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news__item-title {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
 }
 
 .news__item-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news__item-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        height: 6rem;
+
+        font-size: 1.2rem;
+        line-height: 2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 .response {
@@ -210,6 +299,12 @@ body {
     width: 59%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .response {
+        width: 100%;
+    }
+}
+
 .response__text {
     margin-left: 1rem;
 
@@ -217,6 +312,15 @@ body {
     font-size: 14px;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .response__text {
+        margin-left: 0.6rem;
+
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
 }
 
 .response__img {
@@ -242,6 +346,14 @@ body {
     background: #FAFAFA;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse {
+        width: 100%;
+        height: initial;
+        margin-bottom: 3.2rem;
+    }
+}
+
 .browse__item {
     display: flex;
     flex-direction: column;
@@ -258,8 +370,21 @@ body {
     line-height: 64px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse__title {
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
 .browse__photo {
     width: 14%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse__photo {
+        margin: 1.6rem 0 1.6rem 0;
+    }
 }
 
 .browse__text {
@@ -269,6 +394,16 @@ body {
     font-size: 18px;
     line-height: 28px;
     text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse__text {
+        width: 63%;
+        margin-bottom: 2.4rem;
+
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
 }
 
 .button {
@@ -289,12 +424,30 @@ body {
     background: #B9506A;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .button {
+        width: 15.9rem;
+        height: 4rem;
+
+        font-size: 1.6rem;
+    }
+}
+
 .button_alternate {
     width: 15.9rem;
     height: 4rem;
     padding: 0;
 
     font-size: initial;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .button_alternate {
+        width: 15.1rem;
+        height: 3.2rem;
+
+        font-size: 1.4rem;
+    }
 }
 
                     /* ---------------------------- */
@@ -306,6 +459,13 @@ body {
     width: 80.5%;
     height: 52.5vh;
     margin: 0 auto 5.6rem auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .join-invite {
+        width: 100%;
+        margin-bottom: 3.2rem;
+    }
 }
 
 .join-invite__photo-box {
@@ -324,7 +484,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 42.3%;
+    width: 40.8%;
     height: inherit;
 
     background: #283D87;
@@ -339,6 +499,15 @@ body {
     color: white;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .join-invite__item:first-child {
+        margin-bottom: 0;
+
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
 .join-invite__item:nth-child(2) {
     margin-bottom: 2.4rem;
 
@@ -348,13 +517,21 @@ body {
     color: white;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .join-invite__item:nth-child(2) {
+        margin-bottom: 1.6rem;
+
+        font-size: 2.4rem;
+        line-height: 3.8rem;
+    }
+}
+
                         /* -------------------------------------------- */
 
 .footer {
     display: flex;
 
     width: 100%;
-    height: 28.55vh;
     padding: 3.2rem;
     box-sizing: border-box;
 
@@ -363,6 +540,12 @@ body {
 
 .footer__logo {
     height: 4.73vh;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer__logo {
+        height: 7.5vh;
+    }
 }
 
 .right-bar {
@@ -375,12 +558,25 @@ body {
     width: 50%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .right-bar {
+        width: 73%;
+    }
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
 
     width: 85%;
     margin: 0 auto 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-content {
+        width: 100%;
+        margin: 0 0 0 0.8rem;
+    }
 }
 
 .footer__item {
@@ -405,11 +601,26 @@ body {
     color: white;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer__item-head {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+}
+
 .footer__list-item {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer__list-item {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+
+    }
 }
 
 .footer__item-list-row {
@@ -418,6 +629,16 @@ body {
     align-items: normal;
 
     padding-bottom: 1.2rem;
+}
+
+.footer__item-list-row_last {
+    padding-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer__item-list-row_last {
+        padding-bottom: 0;
+    }
 }
 
 .icon {
@@ -440,4 +661,10 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sub-footer__text {
+        font-size: 1.4rem;
+    }
 }
