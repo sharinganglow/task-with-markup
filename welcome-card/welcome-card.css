@@ -1,0 +1,59 @@
+.welcome-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-card__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 52.6vh;
+    width: 100%;
+
+    color: white;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+
+    background-image: url("../img/recetas1.png");
+    background-repeat: round;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .welcome-card__main {
+        font-size: 3.2rem;
+        line-height: 5rem;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-card__main {
+        height: 42vh;
+
+        font-size: 2.8rem;
+        line-height: 4.4rem;
+
+        background-position: bottom 100%;
+        background-size: cover;
+    }
+}
+
+.welcome-card__text-area {
+    width: 34%;
+
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .welcome-card__text-area {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-card__text-area {
+        width: 75%;
+    }
+}

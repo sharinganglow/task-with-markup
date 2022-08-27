@@ -2,215 +2,252 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='button-block/button-block.css' rel='stylesheet'>
-    <link href='common/common.css' rel='stylesheet'>
-    <link href='footer/footer.css' rel='stylesheet'>
-    <link href='header/header.css' rel='stylesheet'>
-    <link href='information-block/information-block.css' rel='stylesheet'>
-    <link href='more-information-block/more-information-block.css' rel='stylesheet'>
-    <link href='navigate/navigate.css' rel='stylesheet'>
-    <link href='rating-table/rating-table.css' rel='stylesheet'>
-    <title>html 6.1 Некитос</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common/common.css">
+    <title>Site</title>
 </head>
 <body>
 
-<div class="main-container">
-    <header class="header-block">
+<div class="main">
+    <header class="header">
+        <div class="content-container">
+            <img class="header__logo" src="img/logo1.svg" alt="logo">
 
-        <h1 class="header-block__title">
-            Феерически-фантастический сайт о так называемом Некита
-        </h1>
-        <aside class="header-block__aside">
-            Доброго времени суток ледис and джентьментос и добро пожаловать на мою страничку
-        </aside>
+            <div class="header__menu">
+                <a class="header__text header__text_left link" href="#">News</a>
+                <a class="header__text link" href="#">About us</a>
+                <a class="header__text link" href="#">Products</a>
+                <a class="header__text header__text_right link" href="#">Contact us</a>
+            </div>
+        </div>
     </header>
-
-    <nav class="navigate">
-        <h2 class="navigate__title">
-            Оглавление как будто в книжке вот это класс!
-        </h2>
-
-        <ul class="navigate__list menu">
-            <li class="navigate__item">
-                <a class="navigate__link link" href="#chuchut">Знакомимся</a>
-            </li>
-            <li class="navigate__item">
-                <a class="navigate__link link" href="#hobbies">Хоббиес</a>
-            </li>
-            <li class="navigate__item">
-                <a class="navigate__link link" href="#memes">Оценки приколов (Объективно)</a>
-            </li>
-            <li class="navigate__item">
-                <a class="navigate__link link" href="#arthas">Величайший из умов человечества</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="fill-field">
-        <div class="information-block">
-            <h3 class="information-block__title">Чучут обо мне:</h3>
-            <p class="information-block__item">Как вы уже, наверное, поняли - меня зовут Никита, <br>
-            Но друзья называют меня Неки&#x301;тос (как будто из Мексики). <br>
-                ниже будет немного инфы обо мне, немного шизотории от меня и немного мемов от спонсоров
+    <div class="welcome-card">
+        <div class="welcome-card__main">
+            <p class="welcome-card__text-area">
+                Empowering Women
+                & Girls Worldwide
             </p>
-            <img class="information-block__img" src="./img/fifa1.jpg" alt="hot dog">
+        </div>
+        <div class="goals">
+            <div class="goals__item">
+                <p class="goals__item-title">Our mission</p>
+                <p class="goals__item-aside">Our Goal, Vision & Commitment</p>
+            </div>
+            <div class="goals__item">
+                <p class="goals__item-title">Our events</p>
+                <p class="goals__item-aside">Register & Help Make Change</p>
+            </div>
+            <div class="goals__item">
+                <p class="goals__item-title">Get involved</p>
+                <p class="goals__item-aside">Volunteer, Participate, or Donate</p>
+            </div>
         </div>
     </div>
+    <div class="general">
+        <h1 class="general__title">Blog posts</h1>
+        <div class="news">
+            <div class="news__item">
+                <div class="main-body">
+                    <img class="news__item-image" src="img/image1.jpg" alt="major">
+                    <p class="news__item-title">
+                        Female Robotics Team Wins Major: part 1
+                    </p>
+                    <p class="news__item-text">
+                        Create a blog post subtitle that summarizes your post in a few short, punchy
+                        sentences and entices your audience to continue reading.
+                    </p>
+                </div>
+                <div class="response">
+                    <div class="response__item">
+                        <img class="response__img" src="img/like.svg" alt="like">
+                        <p class="response__text">
+                            3 likes
+                        </p>
+                    </div>
+                    <div class="response__item">
+                        <img class="response__img" src="img/comment.svg" alt="comment">
+                        <p class="response__text">
+                            0 comments
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <div class="more-information-block">
-        <div class="text-area">
-            <h2 class="text-area__title" id="chuchut">Общая инфа</h2>
-             <p class="text-area__item">Итак, добавлю парочку деталей к образу. Так как я являюсь
-                 <del>мазохистом</del> уверенным в себе человеком
-             - обучаюсь на третьем курсе кафедры <strong>МОП ЭВМ</strong>. <br>
-                Благодаря творческому проекту мне полюбился backend (назад конец), а с началом
-                 стажировки я просто счастлив выполнять действия кнопкодавительного характера. <br>
-             </p>
-            Отошедший от дел (на два шага) геймер-игромант. Послужной список:
-            <ul class="list">
-                <li class="list__item">Defence Of The Ancients часть 2 (два)</li>
-                <li class="list__item">The elder scrolls 5: Skyrim (для нордов)</li>
-                <li class="list__item">Контер струке (стреляю не хуже имперских солдат из звездых войн)</li>
-                <li class="list__item">Minecraft (разочек в год возвращаюсь в детство и строю различные приколы)</li>
-            </ul>
+            <div class="news__item">
+                <div class="main-body">
+                    <img class="news__item-image" src="img/image2.jpg" alt="major">
+                    <p class="news__item-title">
+                        Women Overtake Men in College...
+                    </p>
+                    <p class="news__item-text">
+                        Create a blog post subtitle that summarizes your post in a few short, punchy
+                        sentences and entices your audience to continue reading.
+                    </p>
+                </div>
+                <div class="response">
+                    <div class="response__item">
+                        <img class="response__img" src="img/like.svg" alt="like">
+                        <p class="response__text">
+                            9 likes
+                        </p>
+                    </div>
+                    <div class="response__item">
+                        <img class="response__img" src="img/comment.svg" alt="comment">
+                        <p class="response__text">
+                            3 comments
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news__item">
+                <div class="main-body">
+                    <img class="news__item-image" src="img/image3.jpg" alt="major">
+                    <p class="news__item-title">
+                        Can Ballet Be Feminist?
+                    </p>
+                    <p class="news__item-text">
+                        Create a blog post subtitle that summarizes your post in a few short, punchy
+                        sentences and entices your audience to continue reading.
+                    </p>
+                </div>
+                <div class="response">
+                    <div class="response__item">
+                        <img class="response__img" src="img/like.svg" alt="like">
+                        <p class="response__text">
+                            13 likes
+                        </p>
+                    </div>
+                    <div class="response__item">
+                        <img class="response__img" src="img/comment.svg" alt="comment">
+                        <p class="response__text">
+                            0 comments
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="more-information-block__picture">
-            <p class="more-information-block__item">Ну и если всех этих фактов недостаточно для составления
-                точной картины моей личности, вот моя кошечка <br>
-                Ее зовут Хината и она отжала мой стул, будьте знакомы
-            </p>
-            <img class="more-information-block__img" src="./img/Hinochka.jpg" alt="kit">
-        </div>
-    </div>
-
-    <div class="background-card">
-    <div class="information-container">
-        <div class="more-information-block">
-            <div class="text-area">
-                <h2 class="text-area__title_white" id="hobbies">Вот что я люблю</h2>
-                <p class="text-area__item_white">Нет, здесь не будет макдональдса (и вкусных точек тоже) <br>
-                    Расскажу про свои увлечения, кроме программирования, мне очень нравится играть в <u>волейбол</u>, <u>покер</u>,
-                    <u>настолочки</u>, читать <u>книжечки</u>, смотреть <u>фильмы</u>. <br>
-                    Да, конечно же я стараюсь держать себя в форме и тренируюсь по такому расписанию: <br>
+        <div class="browse">
+            <div class="browse__item">
+                <p class="browse__title">
+                    Latest news
                 </p>
+                <img class="browse__photo" src="img/Ellipse.png" alt="life-tree">
+                <p class="browse__text">
+                    Welcome to your blog post. Use this space to connect with your readers and
+                    potential customers in a way that’s current and interesting. Think of it as
+                    an ongoing conversation where you can share updates about business, trends,
+                    news, and more.
+                </p>
+                <button class="button">
+                    Read more
+                </button>
             </div>
-            <img class="more-information-block__img" src="./img/press_kachat.jpg" alt="kanye" height="500">
+        </div>
+
+        <div class="join-invite">
+            <div class="join-invite__bar">
+                <p class="join-invite__item">
+                    Join us
+                </p>
+                <p class="join-invite__item">
+                    Empower our women
+                </p>
+
+                <div class="button button_alternate">
+                    Support
+                </div>
+            </div>
+            <div class="join-invite__photo-box">
+                <img class="join-invite__photo" src="img/join.jpg" alt="join">
+            </div>
         </div>
     </div>
 
-    <div class="rating-table">
-        <h2 class="rating-table__title" id="memesxd">Мои оценки приколов по десятибалльной системе</h2>
-        <div class="rating-table__row">
-            <div class="rating-table__item_header">
-                непосредственно прикол
-            </div>
+    <div class="footer">
+        <div class="footer-content">
+            <img src="img/logo-white.svg" alt="logo" class="footer__logo">
+            <div class="right-bar">
+                <div class="footer__item">
+                    <p class="footer__item-head">
+                        Get in touch
+                    </p>
+                    <div class="footer__item-list">
+                        <div class="footer__item-list-row">
+                            <img class="icon" src="img/mail.svg" alt="mail">
+                            <p class="footer__list-item">
+                                women@support.com
+                            </p>
+                        </div>
+                        <div class="footer__item-list-row footer__item-list-row_last">
+                            <img class="icon" src="img/phone.svg" alt="phone">
+                            <p class="footer__list-item">
+                                +1 495 454 32 43
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rating-table__item_header">
-                оценка
-            </div>
+                <div class="footer__item">
+                    <p class="footer__item-head">
+                        Follow us
+                    </p>
+                    <div class="footer__item-list">
+                        <div class="footer__item-list-row">
+                            <img class="icon" src="img/twitter.svg" alt="twitter">
+                            <a class="footer__list-item link link_white" href="#">
+                                Twitter
+                            </a>
+                        </div>
 
-            <div class="rating-table__item_header">
-                комментарий
-            </div>
-        </div>
+                        <div class="footer__item-list-row">
+                            <img class="icon" src="img/facebook.svg" alt="facebook" >
+                            <a class="footer__list-item link link_white" href="#">
+                                Facebook
+                            </a>
+                        </div>
 
-        <div class="rating-table__row">
-            <div class="rating-table__item">
-                <img class="rating-table__item_image" src="img/mem1.jpg" alt="dead in drive">
-            </div>
+                        <div class="footer__item-list-row footer__item-list-row_last">
+                            <img class="icon" src="img/inst.svg" alt="instagram" >
+                            <a class="footer__list-item link link_white" href="https://www.instagram.com/sharinganglow">
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rating-table__item">
-                5.2 драйвов /10
-            </div>
+                <div class="footer__item">
+                    <p class="footer__item-head">
+                        Legal
+                    </p>
+                    <div class="footer__item-list">
+                        <a class="footer__list-item link link_white footer__item-list-row" href="#">
+                            Terms & Conditions
+                        </a>
 
-            <div class="rating-table__item">
-                прикол скорее забавный, чем смешной, но Райан Гослинг это Райан Гослинг
-            </div>
-        </div>
+                        <a class="footer__list-item link link_white footer__item-list-row" href="#">
+                            Privacy Policy
+                        </a>
 
-        <div class="rating-table__row">
-            <div class="rating-table__item">
-                <img class="rating-table__item_image" src="img/mem2.jpg" alt="dead in drive">
-            </div>
-
-            <div class="rating-table__item">
-                5.9 антидепрессантов /10
-            </div>
-
-            <div class="rating-table__item">
-                прикол является субъектом постмодерна и происходит утрата категории смысла, <br>
-                чуть-чуть смеемся, чуть-чуть плачем
-            </div>
-        </div>
-
-        <div class="rating-table__row">
-            <div class="rating-table__item">
-                <img class="rating-table__item_image" src="img/mem3.jpg" alt="dead in drive">
-            </div>
-
-            <div class="rating-table__item">
-                7.9322 mayonese'ов /10
-            </div>
-
-            <div class="rating-table__item">
-                ну тут уже уровень выше предшественников, очень даже хорошая забава
-            </div>
-        </div>
-
-        <div class="rating-table__row">
-            <div class="rating-table__item">
-                <img class="rating-table__item_image" src="img/mem5.jpg" alt="dead in drive">
-            </div>
-
-            <div class="rating-table__item">
-                100 перепелиных яиц /10
-            </div>
-
-            <div class="rating-table__item">
-                комментарии излишни, это невероятно
-            </div>
-        </div>
-
-
-        <div class="rating-table__row">
-            <div class="rating-table__item">
-                <img class="rating-table__item_image" src="img/mem6.jpg" alt="dead in drive">
-            </div>
-
-            <div class="rating-table__item">
-                8 коммунистических услух /10
-            </div>
-
-            <div class="rating-table__item">
-                наблюдаем комедию положения, Владос не сдавайся, все через такое прошли
+                        <a class="footer__list-item link link_white footer__item-list-row footer__item-list-row_last" href="#">
+                            Cookies
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="sub-footer">
+        <p class="sub-footer__text">
+            Copyright 2021. All rights reserved
+        </p>
     </div>
-
-
-    <div class="quote-block">
-        <h2 id="arthas">Моя любимая цитата</h2>
-        <p>В моем идеальном государстве я буду главным, а устройство будет представлять собой
-            смесь монархии и коммунизма <br>
-            (c) Виталий, 9 палата
-        </p></div>
-
-    <footer class="footer">
-        <a class="footer__link link" href="https://t.me/re12121see21">Я в телеге</a>
-        <a class="footer__link link" href="https://vk.com/x.cursed">Я в вк</a>
-        <a class="footer__link link" href="https://clck.ru/3vyXS">Я в одноклассниках (не нажимать)</a>
-    </footer>
-
-    <a href="https://clck.ru/3vyXS" class="button-block_default link">
-        rickrollin'
-    </a>
-
-    <a href="https://clck.ru/3vyXS" class="button-block_reverse link">
-        rickrollin'
-    </a>
 </div>
+
 </body>
 </html>

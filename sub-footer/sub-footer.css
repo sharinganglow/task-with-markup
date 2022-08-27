@@ -1,0 +1,36 @@
+.sub-footer {
+    display: flex;
+
+    width: 100%;
+    height: 7.36vh;
+
+    background: #232323;
+}
+
+@media (max-width: 767px) {
+    .sub-footer {
+        height: 9vh;
+    }
+}
+
+.sub-footer__text {
+    margin: auto;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sub-footer__text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .sub-footer__text {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+}

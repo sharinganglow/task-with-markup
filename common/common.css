@@ -1,42 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+@import "../browse/browse.css";
+@import "../button/button.css";
+@import "../footer/footer.css";
+@import "../goals/goals.css";
+@import "../header/header.css";
+@import "../join-invite/join-invite.css";
+@import "../news/news.css";
+@import "../response/response.css";
+@import "../sub-footer/sub-footer.css";
+@import "../welcome-card/welcome-card.css";
+
+html {
+    font-size: 62.5%;
 }
 
-.main-container {
-    font-family: 'Oswald', sans-serif;
-}
-
-.list {
-    padding-bottom: 3%;
-
-    background: white;
-    color: #211e2b;
+body {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
 }
 
 .link {
     text-decoration: none;
     font-weight: normal;
-    color: #373540;
+    color: black;
 
     transition: all 0.2s;
 }
 
-.background-card {
-    background-image:
-            radial-gradient(circle at 0% 0%,
-            #ffbf00 0, #ffb000 12.5%, #ff9f09 25%,
-            #fe8d17 37.5%, #f37b1f 50%, #e66924 62.5%,
-            #da5929 75%, #cf4b2d 87.5%, #c43e31 100%);
-    box-shadow: 1px 4px 2px 3px dimgrey;
-    border-radius: 50px;
-    width: 95%;
+.link_white {
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 77.4%;
+    height: 6rem;
     margin: auto;
 }
 
-.quote-block {
-    height: 100px;
-    padding: 20px;
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-container {
+        width: 89.5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-container {
+        width: 90%;
+        height: 4rem;
+    }
+}
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------- */
+
+.general__title {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .general__title {
+        margin-bottom: 0.7rem;
+
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .general__title {
+        margin-bottom: 1rem;
+        margin-top: 2.4rem;
+
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
+.icon {
+    margin-right: 1.2rem;
 }

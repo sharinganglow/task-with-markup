@@ -1,0 +1,108 @@
+.browse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 80.5%;
+    height: 65vh;
+    margin: 0 auto 5.6rem auto;
+
+    background: #FAFAFA;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse {
+        width: 100%;
+        height: initial;
+        margin-bottom: 3.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .browse {
+        width: 100%;
+        height: initial;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.browse__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3.2rem;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .browse__item {
+        padding: 1.6rem;
+    }
+}
+
+.browse__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse__title {
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .browse__title {
+        font-size: 2.4rem;
+        line-height: 3.8rem;
+    }
+}
+
+.browse__photo {
+    width: 14%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse__photo {
+        margin: 1.6rem 0 1.6rem 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .browse__photo {
+        width: 26%;
+        margin: 1.6rem 0 1.6rem 0;
+    }
+}
+
+.browse__text {
+    width: 67%;
+
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .browse__text {
+        width: 63%;
+        margin-bottom: 2.4rem;
+
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .browse__text {
+        width: 100%;
+
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+}
