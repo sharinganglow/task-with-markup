@@ -44,8 +44,8 @@
 
 .browse__title {
     font-weight: 700;
-    font-size: 48px;
-    line-height: 64px;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -83,8 +83,8 @@
     width: 67%;
 
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     text-align: center;
 }
 

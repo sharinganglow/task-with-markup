@@ -51,8 +51,8 @@
 
 .goals__item-title {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 50px;
+    font-size: 3.2rem;
+    line-height: 5rem;
     color: white;
 }
 
@@ -74,8 +74,8 @@
 
 .goals__item-aside {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     color: white;
 }
 
