@@ -1,0 +1,117 @@
+.news {
+    display: flex;
+    justify-content: space-between;
+
+    width: 82%;
+    height: 60vh;
+    margin: 0 auto 5.6rem auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news {
+        width: 89.5%;
+        height: initial;
+        margin-bottom: 3.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .news {
+        flex-direction: column;
+
+        width: 100%;
+        height: initial;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.news__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 29%;
+    padding: 1.6rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news__item {
+        width: 26.5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .news__item {
+        width: 87%;
+        padding: 0.8rem;
+        margin: auto;
+    }
+
+    .news__item:nth-child(2) {
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+    }
+}
+
+.news__item-image {
+    width: 100%;
+}
+
+.news__item-title {
+    width: 100%;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news__item-title {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .news__item-title {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+
+.news__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .news__item-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        height: 6rem;
+
+        font-size: 1.2rem;
+        line-height: 2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 767px) {
+    .news__item-text {
+        margin-bottom: 0.9rem;
+
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}

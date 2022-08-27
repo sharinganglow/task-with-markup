@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import "../browse/browse.css";
+@import "../button/button.css";
+@import "../footer/footer.css";
+@import "../goals/goals.css";
+@import "../header/header.css";
+@import "../join-invite/join-invite.css";
+@import "../news/news.css";
+@import "../response/response.css";
+@import "../sub-footer/sub-footer.css";
+@import "../welcome-card/welcome-card.css";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+
+    transition: all 0.2s;
+}
+
+.link_white {
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 77.4%;
+    height: 6rem;
+    margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-container {
+        width: 89.5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-container {
+        width: 90%;
+        height: 4rem;
+    }
+}
+                     /* --------------------------------------------- */
+                    /* --------------------------------------------- */
+                /* --------------------------------------- */
+
+.general__title {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .general__title {
+        margin-bottom: 0.7rem;
+
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .general__title {
+        margin-bottom: 1rem;
+        margin-top: 2.4rem;
+
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+}
+
+                        /* -------------------------- */
+
+                    /* ---------------------------- */
+
+                        /* -------------------------------------------- */
+
+.icon {
+    margin-right: 1.2rem;
+}
